@@ -586,7 +586,7 @@
   .c-findmapWrap .area { width:100%; margin-right: 0%;}
   .c-findmapWrap .area ul { display: flex; justify-content: space-between;}
   .c-findmapWrap .area ul > li {
-      width:23%;
+      width:18%;
       margin: 0 1%;
       position: relative;
   }
@@ -770,10 +770,10 @@
     .q-container .h-faq .faq-index {
         position: absolute; top:50px; right:0px; left:3%;
         display: flex; align-items: center;
-    }
-    .q-container .h-faq .faq-index {
         color:#fff; font-size: 15px;
     }
+
+
     .q-container .h-faq .faq-index span { margin:0 3px;}
     .q-container .h-faq .faq-index .fas { color:#fff; font-size: 17px;}
 
@@ -810,6 +810,87 @@
         margin-left: 2%; line-height: 30px;
         font-size: 20px; color:#000; font-weight: bold;
     }
+
+
+
+    /* map */
+    .m-container {padding-top:68px;}
+    .m-container .h-findmap {
+        background-color: #134aa9;
+        padding:100px 0 30px;
+        position: relative;
+    }
+
+    .m-container .h-findmap h2 {
+        margin-left: 5%;
+        font-size: 35px; font-family: 'GmarketSansBold';
+        color:#fff; line-height: 50px; 
+    }
+    .m-container .h-findmap h3 {
+        font-size: 17px; color: #fff; line-height: 20px;
+        margin: 30px 0 30px 3%;
+    }
+    .m-container .h-findmap .map-index {
+        position: absolute; top:50px; right:0px; left:3%;
+        display: flex; align-items: center;
+        color:#fff; font-size: 15px;
+    }
+    .m-container .h-findmap .map-index span { margin:0 3px;}
+    .m-container .h-findmap .map-index .fas { color:#fff; font-size: 17px;}
+
+    /* 지도영역 */
+    .c-findmap { background-color: #eff4fe; padding:20px 0;}
+    .c-findmapWrap { display: flex; flex-wrap: wrap;}
+    .c-findmapWrap .area { width:100%; margin-right: 0%;}
+    .c-findmapWrap .area ul { display: flex; justify-content: space-between;}
+    .c-findmapWrap .area ul > li {
+        width:18%;
+        margin: 0 1%;
+        position: relative;
+    }
+    .c-findmapWrap .area ul > li a {
+        display: block;
+        width: 100%;
+        padding: 11px 10px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 18px;
+        color: #000;
+        font-size: 17px;
+        transition: all .7s;
+    }
+    .c-findmapWrap .area ul > li a::after {
+        content: ""; display: inline-block; 
+        width:75%; height:2px; border-radius: 0%;
+        background-color: #134aa9;
+        position: absolute; top:75%; right:0px; left:50%; transform: translate(-50%, 50%);
+        opacity: 0;
+        transition: all .7s;
+    }
+    .c-findmapWrap .area ul > li.on a::after {
+        content: ""; display: inline-block; 
+        width:75%; height:2px; border-radius: 0%;
+        background-color: #134aa9;
+        position: absolute; top:83%; right:0px; left:50%; transform: translate(-50%, 50%);
+        opacity: 1;
+        transition: all .7s;
+  }
+    .c-findmapWrap .area ul > li:hover a {
+        box-shadow: 3px 3px 20px #ccc;
+        transform: translateY(-5px);
+    }
+    .c-findmapWrap .area ul > li:hover a::after { opacity: 1;}
+  
+  
+    #map { width:98%;  height:400px; margin:20px auto 0; }
+  
+
+
+  
+
+
+
+
 
     /* foot */
     .fTop .fNotice {display: flex; justify-content: space-between;}
