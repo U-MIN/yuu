@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유우생활문화센터 > 자주묻는질문</title>
+    <!-- 파비콘 -->
+    <!-- 웹폰트 / 웹폰트아이콘 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css관련 파일 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/m-style.css">
+    <!-- script관련 파일 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/space_sns.js"></script>
+    <script src="js/hamMenu.js"></script>
+    <script src="js/faq.js"></script>    
+</head>
+<body>
+    <div id="header">
+        <div class="center">
+            <div class="logo">
+                <a href="/yuu"><img src="img/logo.png"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="#">유우생활문화센터</a>
+                    <ul class="depth2">
+                        <li><a href="#">센터소개</a></li>
+                        <li><a href="#">조직도</a></li>
+                        <li><a href="#">사업안내</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">유우생활문화</a>
+                    <ul class="depth2">
+                        <li class="on"><a href="/yuu/map.html">우리지역 생활문화공간</a></li>
+                        <li><a href="#">생활문화찾기</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">발간자료</a>
+                    <ul class="depth2">
+                        <li><a href="#">영상채널</a></li>
+                        <li><a href="#">발간도서</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">웹진</a>
+                    <ul class="depth2">
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">웹진</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">소통</a>
+                    <ul class="depth2">
+                        <li><a href="#">공지사항</a></li>
+                        <li class="on"><a href="/yuu/faq.html">자주묻는질문</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="h-util">
+                <li><a href="#"><i class="fas fa-unlock-alt"></i>로그인</a></li>
+                <li><a href="#"><i class="fas fa-search"></i>검색</a></li>
+            </ul>
+        </div>
+        <div class="gnbBg"></div> <!-- depth의 뒷배경 장식-->
+        <div class="ham">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
+    <div id="ham_menu">
+        <div class="hamTop">
+            <a href="#">로그인</a>
+            <i class="fas fa-times ham_close"></i>
+        </div>
+        <ul class="hamDepth1">
+            <li><a href="/yuu">유우문화센터</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">센터소개</a></li>
+                    <li><a href="#">조직도</a></li>
+                    <li><a href="#">사업안내</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">유우생활문화</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li class="on"><a href="/yuu/map.html">전국 유우생활문화공간</a></li>
+                    <li><a href="#">생활문화찾기</a></li>
+                </ul>
+            </li>
+            <li><a href="#">기록자료</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">영상채널</a></li>
+                    <li><a href="#">발간도서</a></li>
+                </ul>
+            </li>
+            <li><a href="#">웹진</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">웹진보기</a></li>
+                </ul>
+            </li>
+            <li><a href="#">소통</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">공지사항</a></li>
+                    <li class="on"><a href="/yuu/faq.html">자주묻는질문</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="topBtn">
+        <a href="#"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <div class="q-container">
+        <div class="h-faq">
+            <div class="center">
+                <h2>소통</h2>
+                <h3>
+                    <a href="#">공지사항</a><span>/</span><a class="on" href="#">자주묻는질문</a><span>/</span><a href="#">1:1문의</a>
+                </h3>
+                <ul class="faqTab">
+                    <li class="on"><a href="#">전체</a></li>
+                    <li><a href="#">홈페이지</a></li>
+                    <li><a href="#">센터안내</a></li>
+                    <li><a href="#">생활문화관련</a></li>
+                </ul>
+                <div class="faq-index">
+                    <i class="fas fa-home"></i><span></span><i class="fas fa-chevron-right"></i><span></span>유우생활문화<span></span><i class="fas fa-chevron-right"></i><span></span>우리지역 생활문화공간
+                </div>
+            </div>
+        </div>
+        <div class="c-faq">
+            <div class="center">
+                <div class="faqWrap">
+                    <ul class="question">
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate" href="#">생활문화 관련</a>
+                            <a class="sub" href="#">생활문화에 누구나 다 참여 가능한가요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>네, 그렇습니다. 나이, 성별, 인종 등 차별없이 누구나 다 참여 가능합니다.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">홈페이지</a>
+                            <a class="sub"  href="#">유우생활문화센터 홈페이지 회원가입은 어떻게 하나요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span>
+                                    <p>유우지 멤버스 통합 아이디로 로그인 가능합니다. 기존 유우지 멤버스 회원이라면 별도 가입 없이 유우지 멤버스 아이디로 홈페이지 이용 가능합니다.유우지 멤버스 회원이 아니시라면 아래 링크를 통해 사이트에 접속하셔서 가입하시면 이용 가능합니다.
+                                    <br/>
+                                    ∙ 유우지 멤버스 회원가입 사이트: https://-/
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">생활문화 관련</a>
+                            <a class="sub"  href="#">생활문화센터는 무엇을 하는 곳인가요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>지역 주민의 문화여가 참여 접근성을 높이고, 건강하고 활기찬 지역문화공동체를 만들기 위해 지역의 유휴시설을 활용하여 조성된 공간입니다. 현재 전국적으로 124곳이 운영 중입니다.</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">센터안내</a>
+                            <a class="sub"  href="#">유우생활문화센터 시설 대관은 어떻게 할 수 있나요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>유우생활문화센터 공간 대관은 생활문화동호회 및 유우상상캠퍼스 소속 입주단체만 가능합니다. 대관 문의는 아래 기재된 번호로 해주시기 바랍니다.</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">센터안내</a>
+                            <a class="sub"  href="#">유우생활문화센터 운영시간은 어떻게 되나요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>화요일~일요일 09:00~18:00 까지 운영하며, 월요일 및 1월 1일, 설날 및 추석당일에는 휴관합니다.</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">센터안내</a>
+                            <a class="sub"  href="#">유우생활문화센터와 다른 생활문화센터의 차이점은 무엇인가요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>유우생활문화센터는 광역 단위 생활문화지원센터로서, 그 역할을 확장하기 위해 다양한 프로그램을 기획 및 운영하고 있습니다. 전국에 위치한 생활문화 유관기관(기초문화재단, 문화원, 문화의 집, 생활문화센터)과의 교류를 통해 생활문화 이슈를 발굴하고, 각 기관들의 사업을 공유 및 홍보하며 시·군 생활문화 현장을 활성화하기 위한 노력을 기울이고 있습니다.</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">센터안내</a>
+                            <a class="sub"  href="#">우리 지역에 있는 생활문화센터는 어디서 확인할 수 있나요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>본 홈페이지 내에 [유우생활문화 > 우리지역 생활문화공간] 에서 확인 가능합니다.</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                    <ul class="question">
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">홈페이지</a>
+                            <a class="sub"  href="#">유우생활문화센터 홈페이지 회원가입은 어떻게 하나요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span>
+                                    <p>유우지 멤버스 통합 아이디로 로그인 가능합니다. 기존 유우지 멤버스 회원이라면 별도 가입 없이 유우지 멤버스 아이디로 홈페이지 이용 가능합니다.유우지 멤버스 회원이 아니시라면 아래 링크를 통해 사이트에 접속하셔서 가입하시면 이용 가능합니다.
+                                    <br/>
+                                    ∙ 유우지 멤버스 회원가입 사이트: https://-/
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                    <ul class="question">
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">센터안내</a>
+                            <a class="sub"  href="#">유우생활문화센터 시설 대관은 어떻게 할 수 있나요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>유우생활문화센터 공간 대관은 생활문화동호회 및 유우상상캠퍼스 소속 입주단체만 가능합니다. 대관 문의는 아래 기재된 번호로 해주시기 바랍니다.</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">센터안내</a>
+                            <a class="sub"  href="#">유우생활문화센터 운영시간은 어떻게 되나요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>화요일~일요일 09:00~18:00 까지 운영하며, 월요일 및 1월 1일, 설날 및 추석당일에는 휴관합니다.</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">센터안내</a>
+                            <a class="sub"  href="#">유우생활문화센터와 다른 생활문화센터의 차이점은 무엇인가요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>유우생활문화센터는 광역 단위 생활문화지원센터로서, 그 역할을 확장하기 위해 다양한 프로그램을 기획 및 운영하고 있습니다. 전국에 위치한 생활문화 유관기관(기초문화재단, 문화원, 문화의 집, 생활문화센터)과의 교류를 통해 생활문화 이슈를 발굴하고, 각 기관들의 사업을 공유 및 홍보하며 시·군 생활문화 현장을 활성화하기 위한 노력을 기울이고 있습니다.</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">센터안내</a>
+                            <a class="sub"  href="#">우리 지역에 있는 생활문화센터는 어디서 확인할 수 있나요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>본 홈페이지 내에 [유우생활문화 > 우리지역 생활문화공간] 에서 확인 가능합니다.</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                    <ul class="question">
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate" href="#">생활문화 관련</a>
+                            <a class="sub" href="#">생활문화에 누구나 다 참여 가능한가요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>네, 그렇습니다. 나이, 성별, 인종 등 차별없이 누구나 다 참여 가능합니다.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span class="capital">Q</span>
+                            <a class="cate"  href="#">생활문화 관련</a>
+                            <a class="sub"  href="#">생활문화센터는 무엇을 하는 곳인가요?</a>
+                            <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+                            <div class="bg"></div>
+                            <ul class="answer">
+                                <li>
+                                    <span class="capital1">A</span><p>지역 주민의 문화여가 참여 접근성을 높이고, 건강하고 활기찬 지역문화공동체를 만들기 위해 지역의 유휴시설을 활용하여 조성된 공간입니다. 현재 전국적으로 124곳이 운영 중입니다.</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>                
+        </div>
+    </div>
+    
+    <div id="footer">
+        <div class="center">
+            <div class="fTop">
+                <ul class="fNotice">
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">행정정보공개</a></li>
+                    <li><a href="#">클린신고센터</a></li>
+                </ul>
+                <div class="fSite">
+                    <ul class="fSns">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fas fa-comment-dots"></i></a></li>
+                    </ul>
+                    <div class="familySite">
+                        <select>
+                            <option value="">패밀리 사이트<span><i class="fas fa-chevron-up"></i></span></option>
+                            <option value="sscampus">상상캠퍼스</option>
+                            <option value="ecampus">e캠퍼스</option>
+                            <option value="cultureC">유우문화제단</option>
+                        </select>
+                    </div>               
+
+                </div>
+
+            </div>
+            <div class="fBot">
+                <div class="fLogo">
+                    <a href="#"><img src="img/flogo.png"></a>
+                </div>
+                <div class="fInfo">
+                    <p>유우문화재단 유우생활문화센터 (12345) 경기도 유우시 장의구 서치로 플투1990 / 대포전화 031-123-4567</p>
+                    <p>사업자번호 789-26-12923 / 대표이사 장해경</p>
+                    <p>COPYRIGHT ⓒYUU. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

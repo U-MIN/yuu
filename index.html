@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유우생활문화센터</title>
+    <!-- 파비콘 -->
+    <!-- 웹폰트 / 웹폰트아이콘 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css관련 파일 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/main-ani-position.css">
+    <link rel="stylesheet" href="css/m-style.css">
+    <!-- script관련 파일 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/space_sns.js"></script>
+    <script src="js/hamMenu.js"></script>    
+</head>
+<body>
+    <div id="header">
+        <div class="center">
+            <div class="logo">
+                <a href="/yuu"><img src="img/logo.png"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="#">유우생활문화센터</a>
+                    <ul class="depth2">
+                        <li><a href="#">센터소개</a></li>
+                        <li><a href="#">조직도</a></li>
+                        <li><a href="#">사업안내</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">유우생활문화</a>
+                    <ul class="depth2">
+                        <li class="on"><a href="/yuu/map.html">우리지역 생활문화공간</a></li>
+                        <li><a href="#">생활문화찾기</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">발간자료</a>
+                    <ul class="depth2">
+                        <li><a href="#">영상채널</a></li>
+                        <li><a href="#">발간도서</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">웹진</a>
+                    <ul class="depth2">
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">웹진</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">소통</a>
+                    <ul class="depth2">
+                        <li><a href="#">공지사항</a></li>
+                        <li class="on"><a href="/yuu/faq.html">자주묻는질문</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="h-util">
+                <li><a href="#"><i class="fas fa-unlock-alt"></i>로그인</a></li>
+                <li><a href="#"><i class="fas fa-search"></i>검색</a></li>
+            </ul>
+        </div>
+        <div class="gnbBg"></div> <!-- depth의 뒷배경 장식-->
+        <div class="ham">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
+    <div id="ham_menu">
+        <div class="hamTop">
+            <a href="#">로그인</a>
+            <i class="fas fa-times ham_close"></i>
+        </div>
+        <ul class="hamDepth1">
+            <li><a href="/yuu">유우문화센터</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">센터소개</a></li>
+                    <li><a href="#">조직도</a></li>
+                    <li><a href="#">사업안내</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">유우생활문화</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="/yuu/map.html">전국 유우생활문화공간</a></li>
+                    <li><a href="#">생활문화찾기</a></li>
+                </ul>
+            </li>
+            <li><a href="#">기록자료</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">영상채널</a></li>
+                    <li><a href="#">발간도서</a></li>
+                </ul>
+            </li>
+            <li><a href="#">웹진</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">웹진보기</a></li>
+                </ul>
+            </li>
+            <li><a href="#">소통</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="/yuu/faq.html">자주묻는질문</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="topBtn">
+        <a href="#"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <div id="container">
+        <div id="visual">
+            <div class="center">
+            <!-- Slider main container -->
+            <div class="swiper visual">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiperText">
+                            <h3>유우지 작가 4년만의 신간</h3>
+                            <h2>Bless you, Bless me<br/>아뿔싸! 조심하세요!</h2>
+                        </div>
+                        <div class="swiperImg">
+                            <img src="img/visual1.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperText">
+                            <h3>독서 생활문화의 중심</h3>
+                            <h2>일상에 독서를<br/>
+                                물들이다
+                            </h2>
+                        </div>
+                        <div class="swiperImg">
+                            <img src="img/visual2.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperText">
+                            <h3>누구나 이용가능한 생활공간</h3>
+                            <h2>책을 사랑하는<br/>
+                                당신을 만나다
+                            </h2>
+                        </div>
+                        <div class="swiperImg">
+                            <img src="img/visual3.png">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiperText">
+                            <h3>생활 독서인을 위한 문화 허브</h3>
+                            <h2>독서 문화의<br/>
+                                주체자로 성장하다
+                            </h2>
+                        </div>
+                        <div class="swiperImg">
+                            <img src="img/visual4.png">
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination visual-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></i></div>
+            </div>
+            </div>
+        </div>
+        <div id="monthly">
+            <span class="main bg1"></span>
+            <div class="monthlyTop" data-aos="fade-up" data-aos-duration="700">
+                <h2>이달의 생활도서</h2>
+                <h4>이달에 추천하는 다양한 도서를 만나보세요.</h4>
+            </div>
+            <div class="monthlyBot" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
+                <!-- Slider main container -->
+                <div class="swiper monthly">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="monthlyImg">
+                                <img src="img/monthly/1.jpg">
+                                <div class="monthlyBg">
+                                    <div class="cate">초등</div>
+                                    <div class="subject">행운 없는 럭키 박스</div>
+                                    <div class="writer"><span>홍민정</span>글 / <span>박영</span>그림</div>
+                                </div>
+                            </div>
+                            <div class="monthlyText">
+                                <h5><span>초등</span>행운 없는 럭키 박스</h5>
+                                <h6><span>홍민정</span>글 / <span>박영</span>그림</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="monthlyImg">
+                                <img src="img/monthly/2.jpg">
+                                <div class="monthlyBg">
+                                    <div class="cate">초등</div>
+                                    <div class="subject">오늘은 용돈 받는 날</div>
+                                    <div class="writer"><span>연유진</span> 글 / <span>간장</span> 그림</div>
+                                </div>
+                            </div>
+                            <div class="monthlyText">
+                                <h5><span>초등</span>오늘은 용돈 받는 날</h5>
+                                <h6><span>연유진</span> 글 / <span>간장</span> 그림</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="monthlyImg">
+                                <img src="img/monthly/3.jpg">
+                                <div class="monthlyBg">
+                                    <div class="cate">청소년</div>
+                                    <div class="subject">긴긴밤</div>
+                                    <div class="writer"><span>루리</span> 글 / 그림</div>
+                                </div>
+                            </div>
+                            <div class="monthlyText">
+                                <h5><span>청소년</span>긴긴밤</h5>
+                                <h6><span>루리</span> 글 / 그림</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" >
+                            <div class="monthlyImg">
+                                <img src="img/monthly/4.jpg">
+                                <div class="monthlyBg">
+                                    <div class="cate">일반</div>
+                                    <div class="subject">그냥 하지 말라</div>
+                                    <div class="writer"><span>송길영</span> 글</div>
+                                </div>
+                            </div>
+                            <div class="monthlyText">
+                                <h5><span>일반</span>그냥 하지 말라</h5>
+                                <h6><span>송길영</span>글</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="monthlyImg">
+                                <img src="img/monthly/5.jpg">
+                                <div class="monthlyBg">
+                                    <div class="cate">일반</div>
+                                    <div class="subject">불편한 편의점</div>
+                                    <div class="writer"><span>김호연</span> 글</div>
+                                </div>
+                            </div>
+                            <div class="monthlyText">
+                                <h5><span>일반</span>불편한 편의점</h5>
+                                <h6><span>김호연</span>글</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="monthlyImg">
+                                <img src="img/monthly/6.jpg">
+                                <div class="monthlyBg">
+                                    <div class="cate">일반</div>
+                                    <div class="subject">방금 떠나온 세계</div>
+                                    <div class="writer"><span>김초엽</span> 글</div>
+                                </div>
+                            </div>
+                            <div class="monthlyText">
+                                <h5><span>일반</span>방금 떠나온 세계</h5>
+                                <h6><span>김초엽</span>글</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="monthlyImg">
+                                <img src="img/monthly/7.jpg">
+                                <div class="monthlyBg">
+                                    <div class="cate">일반</div>
+                                    <div class="subject">마음챙김의 시</div>
+                                    <div class="writer"><span>류시화</span> 글</div>
+                                </div>
+                            </div>
+                            <div class="monthlyText">
+                                <h5><span>일반</span>마음챙김의 시</h5>
+                                <h6><span>류시화</span>글</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="monthlyImg">
+                                <img src="img/monthly/8.jpg">
+                                <div class="monthlyBg">
+                                    <div class="cate">일반</div>
+                                    <div class="subject">필로소피 랩</div>
+                                    <div class="writer"><span>조니 톰슨</span> 저 / <span>최다인</span> 역</div>
+                                </div>
+                            </div>
+                            <div class="monthlyText">
+                                <h5><span>일반</span>필로소피 랩</h5>
+                                <h6><span>조니 톰슨</span> 저 / <span>최다인</span> 역</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="monthlyImg">
+                                <img src="img/monthly/9.jpg">
+                                <div class="monthlyBg">
+                                    <div class="cate">일반</div>
+                                    <div class="subject">일기</div>
+                                    <div class="writer"><span>황정은</span> 글</div>
+                                </div>
+                            </div>
+                            <div class="monthlyText">
+                                <h5><span>일반</span>일기</h5>
+                                <h6><span>황정은</span>글</h6>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="monthlyImg">
+                                <img src="img/monthly/10.jpg">
+                                <div class="monthlyBg">
+                                    <div class="cate">일반</div>
+                                    <div class="subject">표류사회</div>
+                                    <div class="writer"><span>이소정</span> 글</div>
+                                </div>
+                            </div>
+                            <div class="monthlyText">
+                                <h5><span>일반</span>표류사회</h5>
+                                <h6><span>이소정</span>글</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="space">
+            <span class="main bg2"></span>
+            <div class="center">
+                <div class="spaceTop" data-aos="fade-up" data-aos-duration="700">
+                  <h2>유우생활문화센터<br/>공간소개</h2>
+                  <h4>유우생활문화센터에서 운영하는 공간을 들러보세요.</h4>  
+                </div>
+                <div class="spaceBot">
+                    <div class="spaceWrap" data-aos="fade-right" data-aos-duration="700" data-aos-delay="700">
+                        <ul class="spaceInfo">
+                            <li data-index="0" class="on"><a href="#">어린이 책 놀이터</a></li>
+                            <li data-index="1"><a href="#">생활 수유실</a></li>
+                        </ul>
+                        <ul class="spaceInfo">
+                            <li data-index="2"><a href="#">청소년 책 놀이터</a></li>
+                            <li data-index="3"><a href="#">청년 책 놀이터</a></li>
+                        </ul>
+                        <ul class="spaceInfo">
+                            <li data-index="4"><a href="#">동네부엌</a></li>
+                            <li data-index="5"><a href="#">마주침 공간1</a></li>
+                            <li data-index="6"><a href="#">마주침 공간2</a></li>
+                        </ul>
+                        <ul class="spaceInfo">
+                            <li data-index="7"><a href="#">한뼘전시</a></li>
+                            <li data-index="8"><a href="#">생생살롱1</a></li>
+                            <li data-index="9"><a href="#">생생살롱2</a></li>
+                        </ul>
+                    </div>
+                    <div class="spacePic" data-aos="fade-left" data-aos-duration="700" data-aos-delay="1000">
+                        <div><img src="img/space/spacePic1.jpg"></div>
+                        <div><img src="img/space/spacePic2.jpg"></div>
+                        <div><img src="img/space/spacePic3.jpg"></div>
+                        <div><img src="img/space/spacePic4.jpg"></div>
+                        <div><img src="img/space/spacePic5.jpg"></div>
+                        <div><img src="img/space/spacePic6.jpg"></div>
+                        <div><img src="img/space/spacePic7.jpg"></div>
+                        <div><img src="img/space/spacePic8.jpg"></div>
+                        <div><img src="img/space/spacePic9.jpg"></div>
+                        <div><img src="img/space/spacePic10.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="place">
+            <span class="main bg3"></span>
+            <div class="center">
+                <div class="placeTop" data-aos="fade-up" data-aos-duration="700">
+                    <div class="placeTopWrap">
+                        <h2>전국의<br/>생활문화공간을 찾아보세요</h2>
+                        <h4>가까운 생활문화공간 바로 찾기</h4>  
+                    </div>
+                </div>
+                <div class="placeWrap">
+                    <div class="placeImg">
+                        <img src="img/place.png">
+                    </div>
+                    <div class="placeClick">
+                        <a href="/yuu/map.html">CLICK</a>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
+        <div id="sns">
+            <span class="main bg4"></span>
+            <div class="center">
+                <div class="snsTop" data-aos="fade-up" data-aos-duration="700">
+                    <h2>유우생활문화센터 SNS</h2>
+                    <h4>유우생활문화센터와 친구를 맺고<br/>다양한 소식을 만나보세요.</h4>
+                </div>
+                <div class="snsTab" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
+                    <ul>
+                        <li class="on" data-filter="*"><a href="#">전체</a></li>
+                        <li data-filter=".youtube"><a href="#">유투브</a></li>
+                        <li data-filter=".insta"><a href="#">인스타그램</a></li>
+                        <li data-filter=".fBook"><a href="#">페이스북</a></li>
+                    </ul>
+                </div>
+                <div class="snsBot" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="900">
+                    <div class="thumBox all insta">
+                        <a href="#">
+                            <img src="img/sns/thum1.png">
+                            <div class="snsBg">
+                                <i class="fab fa-instagram"></i>
+                            </div>                            
+                        </a>
+                    </div>
+                    <div class="thumBox all insta">
+                        <a href="#">
+                            <img src="img/sns/thum1.png">
+                            <div class="snsBg">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="thumBox all fBook">
+                        <a href="#">
+                            <img src="img/sns/thum2.png">
+                            <div class="snsBg">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="thumBox all youtube">
+                        <a href="#">
+                            <img src="img/sns/thum3.png">
+                            <div class="snsBg">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="thumBox all insta">
+                        <a href="#">
+                            <img src="img/sns/thum1.png">
+                            <div class="snsBg">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="thumBox all fBook">
+                        <a href="#">
+                            <img src="img/sns/thum2.png">
+                            <div class="snsBg">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="thumBox all youtube">
+                        <a href="#">
+                            <img src="img/sns/thum3.png">
+                            <div class="snsBg">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="thumBox all insta">
+                        <a href="#">
+                            <img src="img/sns/thum1.png">
+                            <div class="snsBg">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>    
+                    </div>
+                    <!-- <div class="thumBox all fBook" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400">
+                        <a href="#">
+                            <img src="img/sns/thum2.png">
+                            <div class="snsBg">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="thumBox all fBook" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="500">
+                        <a href="#">
+                            <img src="img/sns/thum2.png">
+                            <div class="snsBg">
+                                <i class="fab fa-facebook"></i>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="thumBox all insta" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
+                        <a href="#">
+                            <img src="img/sns/thum1.png">
+                            <div class="snsBg">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                        </a>    
+                    </div>
+                    <div class="thumBox all youtube" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="400">
+                        <a href="#">
+                            <img src="img/sns/thum3.png">
+                            <div class="snsBg">
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </a>    
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div id="news">
+            <span class="main bg5"></span>
+            <div class="center">
+                <div class="newsTop">
+                    <h2 data-aos="fade-up" data-aos-duration="700">새로운 소식</h2>
+                    <a data-aos="fade-up" data-aos-duration="700" data-aos-delay="700" href="#">MORE</a>
+                </div>
+                <div class="newsBot">
+                    <div class="newsBox" data-aos="fade-up" data-aos-duration="700" data-aos-delay="700">
+                        <a href="#">
+                            <p class="newsCate">공지</p>
+                            <h3>2021 생활문화 예술동호회 활동 지원 최종 선정 결과 발표</h3>
+                            <p class="content">2021 생활문화 예술동호회 활동 지원 공모에 지원해주신 모든 분들께 감사의 말씀들 드립니다.</p>
+                            <p class="date">2021. 11. 01</p>
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="newsBox" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1000">
+                        <a href="#">
+                            <p class="newsCate">공지</p>
+                            <h3>2021 생활문화 예술동호회 활동 지원 서류심의 합격자 발표</h3>
+                            <p class="content">2021 생활문화 예술동호회 활동 지원 공모에 참여해주셔서 감사드립니다. 서류 심의를 통해 합격자를 공지합니다.</p>
+                            <p class="date">2021. 10. 22</p>
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="newsBox" data-aos="fade-up" data-aos-duration="700" data-aos-delay="1400">
+                        <a href="#">
+                            <p class="newsCate">공지</p>
+                            <h3>2021 생활문화 예술동호회 활동 지원 3차 참여자 모집</h3>
+                            <p class="content">일상 속에서 누리는 생활문화 활동 지원 프로그램 참여자를 모집합니다. 2021년 예술 동호회 연계 활동 지원 3차 지원자를 공고합니다.</p>
+                            <p class="date">2021. 10. 06</p>
+                            <i class="fas fa-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="center">
+            <div class="fTop">
+                <ul class="fNotice">
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">행정정보공개</a></li>
+                    <li><a href="#">클린신고센터</a></li>
+                </ul>
+                <div class="fSite">
+                    <ul class="fSns">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fas fa-comment-dots"></i></a></li>
+                    </ul>
+                    <div class="familySite">
+                        <select>
+                            <option value="">패밀리 사이트<span><i class="fas fa-chevron-up"></i></span></option>
+                            <option value="sscampus">상상캠퍼스</option>
+                            <option value="ecampus">e캠퍼스</option>
+                            <option value="cultureC">유우문화제단</option>
+                        </select>
+                    </div>               
+
+                </div>
+
+            </div>
+            <div class="fBot">
+                <div class="fLogo">
+                    <a href="#"><img src="img/flogo.png"></a>
+                </div>
+                <div class="fInfo">
+                    <p>유우문화재단 유우생활문화센터 (12345) 경기도 유우시 장의구 서치로 플투1990 / 대포전화 031-123-4567</p>
+                    <p>사업자번호 789-26-12923 / 대표이사 장해경</p>
+                    <p>COPYRIGHT ⓒYUU. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

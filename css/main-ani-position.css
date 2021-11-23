@@ -1,0 +1,75 @@
+  /*bg animation */
+  .main {
+    opacity: .1
+}
+#container {position: relative;}
+.main.bg1{
+    display: inline-block;
+    width:450px;
+    height:680px;
+    background-image: url(../img/bg/bg-y.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(400px, -1700px);
+    animation: main-bg-y 3s linear 0s infinite alternate;
+}
+
+.main.bg2{
+  display: inline-block;
+  width:350px;
+  height:625px;
+  background-image: url(../img/bg/bg-u1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(-1000px, -850px);
+  animation: main-bg-u1 3s linear 0s infinite alternate;
+}
+
+.main.bg3{
+  z-index: -1;
+  display: inline-block;
+  width:393px;
+  height:700px;
+  background-image: url(../img/bg/bg-u2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(555px, -100px);
+  animation: main-bg-u2 3s linear 0s infinite alternate;
+}
+
+.main.bg4{
+  z-index:0;
+  display: inline-block;
+  width:393px;
+  height:700px;
+  background-image: url(../img/bg/bg-j.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(-950px, 550px);
+  animation: main-bg-j 3s linear 0s infinite alternate;
+}
+.main.bg5{
+  z-index: 0;
+  display: inline-block;
+  width:393px;
+  height:700px;
+  background-image: url(../img/bg/bg-i.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(550px, 1650px);
+  animation: main-bg-i 3s linear 0s infinite alternate;
+}
+
+
+
+

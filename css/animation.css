@@ -1,0 +1,73 @@
+/* top버튼 */
+    @keyframes topBtn1 {
+        0% {
+            box-shadow: 0 0 0 0 rgb(88 120 243 / 40%);
+        }
+        70% {
+            box-shadow: 0 0 0 15px rgb(88 120 243 / 0%);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgb(88 120 243 / 0%);
+        }
+    }
+
+    /* more버튼 */
+        @keyframes moreBtn {
+        0% {
+            box-shadow: 0 0 0 0 rgb(88 120 243 / 40%);
+        }
+        70% {
+            box-shadow: 0 0 0 15px rgb(88 120 243 / 0%);
+        }
+        100% {
+            box-shadow: 0 0 0 0 rgb(88 120 243 / 0%);
+        }
+    }
+
+
+    @keyframes main-bg-y {
+        from {
+            top: 50%;
+        }
+    
+        to {
+            top: 51%;
+        }
+    }
+
+    @keyframes main-bg-u1 {
+        from {
+            left: 50%;
+        }
+    
+        to {
+            left: 53%;
+        }
+    }
+    @keyframes main-bg-u2 {
+        from {
+            left: 50%;
+        }
+    
+        to {
+            left: 48%;
+        }
+    }
+    @keyframes main-bg-j {
+        from {
+            top: 50%;
+        }
+    
+        to {
+            top: 53%;
+        }
+    }
+    @keyframes main-bg-i{
+        from {
+            left: 50%;
+        }
+    
+        to {
+            left: 48%;
+        }
+    }

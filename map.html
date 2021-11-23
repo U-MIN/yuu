@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유우생활문화센터 > 생활문화공간찾기</title>
+    <!-- 파비콘 -->
+    <!-- 웹폰트 / 웹폰트아이콘 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css관련 파일 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/m-style.css">
+    <!-- script관련 파일 -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/space_sns.js"></script>
+    <script src="js/hamMenu.js"></script>    
+</head>
+<body>
+    <div id="header">
+        <div class="center">
+            <div class="logo">
+                <a href="/yuu"><img src="img/logo.png"></a>
+            </div>
+            <ul class="gnb">
+                <li><a href="#">유우생활문화센터</a>
+                    <ul class="depth2">
+                        <li><a href="#">센터소개</a></li>
+                        <li><a href="#">조직도</a></li>
+                        <li><a href="#">사업안내</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">유우생활문화</a>
+                    <ul class="depth2">
+                        <li class="on"><a href="/yuu/map.html">우리지역 생활문화공간</a></li>
+                        <li><a href="#">생활문화찾기</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">발간자료</a>
+                    <ul class="depth2">
+                        <li><a href="#">영상채널</a></li>
+                        <li><a href="#">발간도서</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">웹진</a>
+                    <ul class="depth2">
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">웹진</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">소통</a>
+                    <ul class="depth2">
+                        <li><a href="#">공지사항</a></li>
+                        <li class="on"><a href="/yuu/faq.html">자주묻는질문</a></li>
+                        <li><a href="#">1:1문의</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="h-util">
+                <li><a href="#"><i class="fas fa-unlock-alt"></i>로그인</a></li>
+                <li><a href="#"><i class="fas fa-search"></i>검색</a></li>
+            </ul>
+        </div>
+        <div class="gnbBg"></div> <!-- depth의 뒷배경 장식-->
+        <div class="ham">
+            <a href="#"><i class="fas fa-bars"></i></a>
+        </div>
+    </div>
+    <div id="ham_menu">
+        <div class="hamTop">
+            <a href="#">로그인</a>
+            <i class="fas fa-times ham_close"></i>
+        </div>
+        <ul class="hamDepth1">
+            <li><a href="/yuu">유우문화센터</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">센터소개</a></li>
+                    <li><a href="#">조직도</a></li>
+                    <li><a href="#">사업안내</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+            </li>
+            <li><a href="#">유우생활문화</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li class="on"><a href="/yuu/map.html">전국 유우생활문화공간</a></li>
+                    <li><a href="#">생활문화찾기</a></li>
+                </ul>
+            </li>
+            <li><a href="#">기록자료</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">영상채널</a></li>
+                    <li><a href="#">발간도서</a></li>
+                </ul>
+            </li>
+            <li><a href="#">웹진</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">소개</a></li>
+                    <li><a href="#">웹진보기</a></li>
+                </ul>
+            </li>
+            <li><a href="#">소통</a><i class="fas fa-chevron-down"></i>
+                <ul class="hamDepth2">
+                    <li><a href="#">공지사항</a></li>
+                    <li class="on"><a href="/yuu/faq.html">자주묻는질문</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="topBtn">
+        <a href="#"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <div class="m-container">
+        <div class="h-findmap">
+            <div class="center">
+                <h2>유우생활문화</h2>
+                <h3>가까운 생활문화 공간 찾기</h3>
+                <div class="map-index">
+                    <i class="fas fa-home"></i><span></span><i class="fas fa-chevron-right"></i><span></span>유우생활문화<span></span><i class="fas fa-chevron-right"></i><span></span>우리지역 생활문화공간
+                </div>
+            </div>
+        </div>
+        <div class="c-findmap">
+            <div class="center">
+                <div class="c-findmapWrap">
+                    <div class="area">
+                        <ul>
+                            <li data-index="0"><a href="#">전체보기</a></li>
+                            <li class="on" data-index="1"><a href="#">서울지부</a></li>
+                            <li  data-index="2"><a href="#">고양지부</a></li>
+                            <li  data-index="3"><a href="#">용인지부</a></li>
+                            <li  data-index="4"><a href="#">수원지부</a></li>
+                        </ul>
+                    </div>
+                    <div id="map"></div>
+                    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b1abca9ee2823840acdcfef1a6cc5545"></script>
+                </div>
+            </div>                
+        </div>
+    </div>
+    <div id="footer">
+        <div class="center">
+            <div class="fTop">
+                <ul class="fNotice">
+                    <li><a href="#">개인정보 처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">행정정보공개</a></li>
+                    <li><a href="#">클린신고센터</a></li>
+                </ul>
+                <div class="fSite">
+                    <ul class="fSns">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fas fa-comment-dots"></i></a></li>
+                    </ul>
+                    <div class="familySite">
+                        <select>
+                            <option value="">패밀리 사이트<span><i class="fas fa-chevron-up"></i></span></option>
+                            <option value="sscampus">상상캠퍼스</option>
+                            <option value="ecampus">e캠퍼스</option>
+                            <option value="cultureC">유우문화제단</option>
+                        </select>
+                    </div>               
+
+                </div>
+
+            </div>
+            <div class="fBot">
+                <div class="fLogo">
+                    <a href="#"><img src="img/flogo.png"></a>
+                </div>
+                <div class="fInfo">
+                    <p>유우문화재단 유우생활문화센터 (12345) 경기도 유우시 장의구 서치로 플투1990 / 대포전화 031-123-4567</p>
+                    <p>사업자번호 789-26-12923 / 대표이사 장해경</p>
+                    <p>COPYRIGHT ⓒYUU. ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        //지도 생성
+        var mapContainer = document.getElementById('map');
+        var mapOption = {
+            center: new kakao.maps.LatLng(37.56759082461652, 126.97816963162985),
+            level: 3
+        };
+
+        //지도를 생성
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+
+        // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
+        var mapTypeControl = new kakao.maps.MapTypeControl();
+
+        // 지도에 컨트롤을 추가해야 지도위에 표시됩니다
+        // kakao.maps.ControlPosition은 컨트롤이 표시될 위치를 정의하는데 TOPRIGHT는 오른쪽 위를 의미합니다
+        map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+
+        // 지도 확대 축소를 제어할 수 있는  줌 컨트롤을 생성합니다
+        var zoomControl = new kakao.maps.ZoomControl();
+        map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+       
+
+
+
+
+        // 버튼을 클릭하면 아래 배열의 좌표들이 모두 보이게 지도 범위를 재설정합니다 
+        var points = [
+        new kakao.maps.LatLng(37.566390689840716, 126.97794373462999),
+        new kakao.maps.LatLng(37.658351778595275, 126.83200306893947),
+        new kakao.maps.LatLng(37.241249768036226, 127.17791004009277),
+        new kakao.maps.LatLng(37.26436502956522, 127.02859981965263)
+        ];
+
+        // 지도를 재설정할 범위정보를 가지고 있을 LatLngBounds 객체를 생성합니다
+        var bounds = new kakao.maps.LatLngBounds();    
+
+        var i, marker;
+        for (i = 0; i < points.length; i++) {
+            // 배열의 좌표들이 잘 보이게 마커를 지도에 추가합니다
+            marker =     new kakao.maps.Marker({ position : points[i] });
+            marker.setMap(map);
+            
+            // LatLngBounds 객체에 좌표를 추가합니다
+            bounds.extend(points[i]);
+        }
+
+        console.log(bounds);
+        function setBounds(bounds) {
+            // LatLngBounds 객체에 추가된 좌표들을 기준으로 지도의 범위를 재설정합니다
+            // 이때 지도의 중심좌표와 레벨이 변경될 수 있습니다
+            map.setBounds(bounds);
+        }
+
+
+
+
+        //지도이동시키기
+            function setCenter(position) {
+        // 이동할 위도 경도 위치를 생성합니다 
+            var moveLatLon = position;
+            
+            // 지도 중심을 부드럽게 이동시킵니다
+            // 만약 이동할 거리가 지도 화면보다 크면 부드러운 효과 없이 이동합니다
+            map.setCenter(moveLatLon);
+            var level = 3;
+            map.setLevel(level);
+            }
+
+        
+        //이동할 위치좌표 배열과 객체로 정리
+        let positions = [
+
+            {   
+                title:'유우생활문화센터 서울지점(확대시점)',
+                latlng: new kakao.maps.LatLng(37.566390689840716, 126.97794373462999),
+            }
+            ,
+            {   title:'유우생활문화센터 서울지부',
+                latlng: new kakao.maps.LatLng(37.566390689840716, 126.97794373462999),
+
+            },
+            {   title: '유우생활문화센터 고양지부',
+                latlng: new kakao.maps.LatLng(37.658351778595275, 126.83200306893947),
+
+            },
+            {
+                title: '유우생활문화센터 용인지부',
+                latlng: new kakao.maps.LatLng(37.241249768036226, 127.17791004009277),
+
+            },
+            {
+                title: '유우생활문화센터 수원지부',
+                latlng: new kakao.maps.LatLng(37.26436502956522, 127.02859981965263),
+
+            },
+        ];
+
+
+        for(let j=0; j<positions.length; j++)
+        {
+            var marker = new kakao.maps.Marker({
+                map: map, // 마커를 표시할 지도
+                position: positions[j].latlng, // 마커를 표시할 위치
+                title : positions[j].title, // 마커의 타이틀, 마커에 마우스를 올리면 타이틀이 표시됩니다
+            });
+
+            
+        }
+
+        //버튼 클릭시 해당 좌표로 이동
+        const mapBtn = document.querySelectorAll(".area > ul > li");
+
+        for(let i=0; i<mapBtn.length; i++)
+        {
+                //버튼 클래스remove 제거 위한 반복문
+                mapBtn[i].addEventListener("click",function(e){
+                    e.preventDefault();
+
+                    for(let j=0; j<mapBtn.length; j++)
+                    {
+                        mapBtn[j].classList.remove("on");
+                    }
+                //타겟 버튼 클래스만 add    
+                e.currentTarget.classList.add("on");
+
+                //조건문을 위해 데이터 가지고 오기
+                let btnIndex = e.currentTarget.getAttribute("data-index");
+                // console.log(btnIndex);
+
+                if(btnIndex == 0)
+                {
+                    setBounds(bounds);
+                }
+                else
+                {
+                    setCenter(positions[i].latlng); //카카오 지도이동 함수 
+                }
+            });
+
+        }
+
+    </script>
+</body>
+</html>
