@@ -1,5 +1,5 @@
   /*bg animation */
-  .main {
+.main {
     opacity: .1
 }
 #container {position: relative;}
@@ -70,6 +70,12 @@
   animation: main-bg-i 3s linear 0s infinite alternate;
 }
 
+/* 모바일에서는 안보이게 처리 */
+@media screen and (max-width:768px){
+  .main.bg1 , .main.bg2 , .main.bg3 , .main.bg4 , .main.bg5 {
+    display: none;
+  }
+}
 
 
 
